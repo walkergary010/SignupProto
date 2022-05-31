@@ -23,8 +23,8 @@ app.get('/process_get', function (req, res) {
    response = {
       first_name:req.query.first_name,
       last_name:req.query.last_name,
-      company:req.body.company,
-      email_address:req.body.email_address
+      company:req.query.company,
+      email_address:req.query.email_address
    };
    console.log(response);
    res.end(JSON.stringify(response));
