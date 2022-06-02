@@ -18,6 +18,10 @@ app.get('/index.htm', function (req, res) {
    res.sendFile( __dirname + "/" + "index.htm" );
 })
 
+app.get('/hsform.htm', function (req, res) {
+   res.sendFile( __dirname + "/" + "hsform.htm" );
+})
+
 app.get('/process_get', function (req, res) {
    // Prepare output in JSON format
    response = {
