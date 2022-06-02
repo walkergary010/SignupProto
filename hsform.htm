@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<body>
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js">
+  alert("Redirecting to signupproto");
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "7555460",
+    formId: "5a3b4a73-c653-449f-b630-345b0dfa35f1",
+    onFormSubmit: function($form) {
+       setTimeout( function() {
+         var redirectto = "https://signupproto-pmzxw.ondigitalocean.app:443/process_post?first_name=TestGary" + "&last_name=Walker"  + "&company=Cogswell Cogs" + "&email_address=gw@cogswellcogs.com" ;
+         
+         window.location =  encodeURI(redirectto);
+       }, 250 ); // Redirects to url with query string data from form fields after 250 milliseconds.
+    }
+  });
+</script>
+</body>
+</html>
