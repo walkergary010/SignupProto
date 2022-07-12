@@ -71,6 +71,11 @@ app.get('/ab*cd', function(req, res) {
     res.send('Page Pattern Match');
 })
 
+//This responds to a GET request for the /calendar page
+app.get('/calendar', function(req,res)}
+   console.log("Got a GET request for /calendar");
+   res.sendFile( __dirname + "/" + "calendar.htm" );
+
 var server = app.listen(port, function () {
    var host = server.address().address;
 //   var port = server.address().port;
