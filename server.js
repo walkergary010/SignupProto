@@ -11,7 +11,7 @@ app.use(express.static('public'));
 // This responds with "Hello World" on the homepage
 app.get('/', function (req, res) {
    console.log("Got a GET request for the homepage");
-   res.send('Welcome to my Test Server');
+   res.send('Welcome to my Calendar Test Server');
 })
 
 app.get('/index.htm', function (req, res) {
