@@ -72,9 +72,10 @@ app.get('/ab*cd', function(req, res) {
 })
 
 //This responds to a GET request for the /calendar page
-app.get('/calendar', function(req,res)}
+app.get('/calendar', function(req,res){
    console.log("Got a GET request for /calendar");
    res.sendFile( __dirname + "/" + "calendar.htm" );
+})
 
 var server = app.listen(port, function () {
    var host = server.address().address;
